@@ -1,4 +1,4 @@
-package com.glennt.wsi.codingchallenge.model;
+package com.glennt.wsi.codingchallenge.utils;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,8 +7,11 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
+import com.glennt.wsi.codingchallenge.model.ZipCodeRange;
+import com.glennt.wsi.codingchallenge.utils.ZipCodeRangeAscComparator;
+
 /**
- * Unit tests for ZipCodeRangeAscComprator class
+ * Unit tests for ZipCodeRangeAscComprator class.
  * 
  * @author Glenn Tolentino
  *

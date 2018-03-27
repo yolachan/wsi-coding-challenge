@@ -5,8 +5,8 @@ import java.util.Collections;
 import java.util.List;
 
 import com.glennt.wsi.codingchallenge.model.ZipCodeRange;
-import com.glennt.wsi.codingchallenge.model.ZipCodeRangeAscComparator;
 import com.glennt.wsi.codingchallenge.utils.ValidationUtils;
+import com.glennt.wsi.codingchallenge.utils.ZipCodeRangeAscComparator;
 
 /**
  * This class will take a collection of ranges and produce the minimum number of ranges that are equivalent to the input. 

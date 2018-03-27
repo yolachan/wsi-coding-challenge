@@ -16,6 +16,8 @@ public class ZipCodeRangeReducerTest {
 	/**
 	 * Test case 1:
 	 * 
+	 * No overlapping ranges
+	 * 
 	 * Input: [94133,94133] [94200,94299] [94600,94699]
 	 * Expected: [94133,94133] [94200,94299] [94600,94699]
 	 */
@@ -31,6 +33,8 @@ public class ZipCodeRangeReducerTest {
 	
 	/**
 	 * Test case 2:
+	 * 
+	 * One overlapping range
 	 * 
 	 * Input: [94133,94133] [94200,94299] [94226,94399] 
 	 * Expected: [94133,94133] [94200,94399]
@@ -51,7 +55,7 @@ public class ZipCodeRangeReducerTest {
 	 * All the same ranges
 	 * 
 	 * Input: [11111,11111] [11111,11111] [11111,1111] 
-	 * Expected: [11111,11111] [11111,1111]
+	 * Expected: [11111,11111]
 	 */
 	@Test
 	public void case3() {
@@ -86,18 +90,17 @@ public class ZipCodeRangeReducerTest {
 	 * 
 	 * Specify some ranges backwards 
 	 * 
-	 * Input: [31111,11111] [11111,31111] [11110,11111] [11117,99999] [11110,11119] [31110,31112] 
-	 * Expected: [99999,20000]
+	 * Input: [31111,11111] [11111,31111] [11110,11111] [11117,10000] [11110,11119] [32110,33112] 
+	 * Expected: [11111,31111] [32110,33112]
 	 */
 	@Test
 	public void case5() {
 		ZipCodeRangeReducer reducer = new ZipCodeRangeReducer();
 		
 		ZipCodeRange[] newRanges = reducer.reduceZipCodeRanges(new String[]{
-			"[11111,11111]", "[11112,11113]", "[11111,11111]", "[11117,11118]", "[11110,11119]", "[10000,20000]" 
+			"[31111,11111]", "[11111,31111]", "[11110,11111]", "[11117,10000]", "[11110,11119]", "[32110,33112]" 
 		});
-		Assert.assertEquals("[10000,20000]", ZipCodeRange.toString(newRanges));
+		Assert.assertEquals("[10000,31111] [32110,33112]", ZipCodeRange.toString(newRanges));
 	}
-	
 
 }

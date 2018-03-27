@@ -1,9 +1,11 @@
-package com.glennt.wsi.codingchallenge.model;
+package com.glennt.wsi.codingchallenge.utils;
 
 import java.util.Comparator;
 
+import com.glennt.wsi.codingchallenge.model.ZipCodeRange;
+
 /**
- * Comparator class that allows the sorting of a collection of Range objects first by lowerBound, then by upperBound.
+ * Comparator class that allows the sorting of a collection of ZipCodeRange objects first by lowerBound, then by upperBound.
  * 
  * @author Glenn Tolentino
  *
