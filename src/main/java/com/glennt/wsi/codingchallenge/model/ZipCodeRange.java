@@ -32,21 +32,6 @@ public class ZipCodeRange {
 		ZipCodeRange range = (ZipCodeRange) obj;
 		return this.lowerBound == range.lowerBound && this.upperBound == range.upperBound;
 	}
-
-	public static String toString(ZipCodeRange[] ranges) {
-		StringBuffer buf = new StringBuffer();
-		
-		boolean first = false;
-		for(ZipCodeRange range : ranges) {
-			if(first == false) {
-				buf.append(range.toString());
-				first = true;
-			} else {
-				buf.append(" " + range.toString());
-			}
-		}
-		return buf.toString();
-	}
 	
 	/**
 	 * @return A zip code range with the following format [#####,#####]
@@ -83,8 +68,4 @@ public class ZipCodeRange {
 	public void setUpperBound(int upperBound) {
 		this.upperBound = upperBound;
 	}
-	
-	
-	
-	
 }

@@ -21,9 +21,9 @@ public class Main {
 		System.out.println("Input: " + StringUtils.join(args, " "));
 		
 		//run reducer which validates data and reduces the zip code array
-		ZipCodeRangeReducer reducer = new ZipCodeRangeReducer();
+		ZipCodeRange[] ranges = ZipCodeRangeReducer.reduceZipCodeRanges(args);
 		
 		//display output as a flattened string
-		System.out.println("Output: " + ZipCodeRange.toString(reducer.reduceZipCodeRanges(args)));
+		System.out.println("Output: " + StringUtils.join(ranges, " "));
 	}
 }

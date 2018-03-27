@@ -24,7 +24,7 @@ public class ZipCodeRangeReducer {
 	 * @param ranges An array of zip code ranges
 	 * @return A reduced array that represents the same ranges
 	 */
-	public ZipCodeRange[] reduceZipCodeRanges(String[] ranges) {
+	public static ZipCodeRange[] reduceZipCodeRanges(String[] ranges) {
 		
 		List<String> invalidRanges = new ArrayList<String>();
 		List<ZipCodeRange> validRanges = new ArrayList<ZipCodeRange>();
@@ -53,7 +53,7 @@ public class ZipCodeRangeReducer {
 		if(invalidRanges.size() > 0) {
 			throw new IllegalArgumentException("Invalid ranges found: " + invalidRanges + ", input must be provided as 5-digit zip code ranges separated by spaces: [#####,#####] [#####,#####] [#####,#####]");
 		} else {
-			return this.reduceZipCodeRanges(validRanges);
+			return reduceZipCodeRanges(validRanges);
 		}
 	}
 	
@@ -63,7 +63,7 @@ public class ZipCodeRangeReducer {
 	 * @param ranges List of valid zip code ranges
 	 * @return A reduced array that represents the same ranges
 	 */
-	private ZipCodeRange[] reduceZipCodeRanges(List<ZipCodeRange> ranges) {
+	private static ZipCodeRange[] reduceZipCodeRanges(List<ZipCodeRange> ranges) {
 		
 		//if ranges is null or empty return input
 		if(ranges == null) { 
