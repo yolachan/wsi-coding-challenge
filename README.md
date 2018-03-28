@@ -18,35 +18,26 @@
   <li>Ranges may or may not overlap</li>
   <li>Your solution will be evaluated on the correctness and the approach taken, and adherence to coding standards and best practices</li>
 </ul>
-<h2>EXAMPLES:</h2>
+<h2>EXAMPLES</h2>
 <p>If the input = [94133,94133] [94200,94299] [94600,94699]</p>
 <p>Then the output should be = [94133,94133] [94200,94299] [94600,94699]</p>
 <p>If the input = [94133,94133] [94200,94299] [94226,94399]</p>
 <p>Then the output should be = [94133,94133] [94200,94399]</p>
 
-<h2>Evaluation Guidelines:</h2>
-<p>Your work will be evaluated against the following criteria:</p>
-<ul>
-  <li>Successful implementation</li>
-  <li>Efficiency of the implementation</li>
-  <li>Design choices and overall code organization</li>
-  <li>Code quality and best practices</li>
-</ul>  
-
-<h2>Requirements</h2>
+<h2>REQUIREMENTS</h2>
 <p>In order to run the program you will need the following installed:</p>
 <ul>
   <li>Java 8</li>
   <li>Maven 3</li>
 </ul>
 
-<h2>Running the Program</h2>
+<h2>RUNNING THE PROGRAM</h2>
 <p>To run the program from the command line type in the following in a terminal within the project's directory:</p>
 <p><strong>mvn exec:java -Dexec.mainClass="com.glennt.wsi.codingchallenge.Main" -Dexec.args="[94133,94133] [94200,94299] [94226,94399]"</strong></p>
-<p>The arguments are supplied to the -Dexec.args parameter as a string of zip coder ranges of the following format: [#####,#####], separated by spaces.</p>
+<p>The arguments are supplied to the -Dexec.args parameter as a string of zip code ranges of the following format: [#####,#####], separated by spaces.</p>
 <p>If the zip code ranges are valid the reduced set of ranges will be printed to the console.</p>
 
-<h2>Unit Tests</h2>
+<h2>UNIT TESTS</h2>
 <p>Unit tests for all classes can be run from the command line by typing the following:</p>
 <p><strong>mvn test</strong></p>
 
