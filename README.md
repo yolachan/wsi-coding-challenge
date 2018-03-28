@@ -38,7 +38,7 @@
 <p>If the zip code ranges are valid the reduced set of ranges will be printed to the console.</p>
 
 <h2>UNIT TESTS</h2>
-<p>Unit tests for all classes can be run from the command line by typing the following:</p>
+<p>Unit tests for all classes can be run from the command line by typing the following within the project's directory:</p>
 <p><strong>mvn test</strong></p>
 
 
