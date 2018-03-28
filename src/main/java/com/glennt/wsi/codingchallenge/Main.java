@@ -13,7 +13,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		if(args.length == 0) {
-			System.out.println("No input provided, input must be provided as 5-digit zip code ranges separated by spaces: [#####,#####] [#####,#####] [######,#####]");
+			System.out.println("No input provided, input must be provided as 5-digit zip code ranges separated by spaces: [#####,#####] [#####,#####] [#####,#####]");
 			System.exit(1);
 		}
 	

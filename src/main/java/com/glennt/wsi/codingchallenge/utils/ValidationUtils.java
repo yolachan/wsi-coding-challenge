@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
 /**
- * Utility class for validation of zip code ranges.
+ * Utility class for various validation routines.
  * 
  * @author Glenn Tolentino
  *
@@ -15,7 +15,7 @@ public class ValidationUtils {
 	private static final Pattern zipCodePattern = Pattern.compile("\\[\\d{5},\\d{5}\\]");
 	
 	/**
-	 * Validates a zip code range string of the format [######,######].
+	 * Validates a zip code range string of the format [#####,#####].
 	 * 
 	 * @param string
 	 * @return true of valid, false if not
