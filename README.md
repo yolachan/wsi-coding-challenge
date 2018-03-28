@@ -32,7 +32,7 @@
 </ul>
 
 <h2>Running the Program</h2>
-<p>To run the program from the command line type in the following in a terminal within the project's directory:</p>
+<p>To run the program from the command line type the following in a terminal within the project's directory:</p>
 <p><strong>mvn exec:java -Dexec.mainClass="com.glennt.wsi.codingchallenge.Main" -Dexec.args="[94133,94133] [94200,94299] [94226,94399]"</strong></p>
 <p>The arguments are supplied to the -Dexec.args parameter as a string of zip code ranges of the following format: [#####,#####], separated by spaces.</p>
 <p>If the zip code ranges are valid the reduced set of ranges will be printed to the console.</p>
